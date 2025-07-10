@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個網頁</title>
+</head>
+<body>
+    <h1>Hello~~~~~</h1>
+    <h2>CatPhotoApp</h2>
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <!--註解-->
+    <main>放主要段落，便於搜尋引擎查</main>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="沒有圖片啦~~~~"> <!--圖片img只有箭頭無箭尾 alt內表示圖片未生成時的預測文字-->
+    <a href='https://www.freecatphotoapp.com'>cat photos</a>  <!--外部連結href給網址+箭頭箭尾間顯示說明-->
+    <a href="#XXX">Jump to XXX</a> <!--需另外在某個標籤如<footer id="XXX"></footer>，表示內部連結，頁面會跳到<footer>-->>
+    <a href="#"></a> <!--表示只想先設計架構，還不確定連結會連到哪，將其變成死連結-->
+    <ul></ul><!--不排序？-->
+    <ol></ol><!--排序？-->
+    <li></li><!--內文-->
+    
+    <input type="text" placeholder='cat photo URL' required> <!--為void element無結束標籤，用type!，placeholder='框內預設字'，+required表示必填否則無法送出-->
+    <form action="#">
+        <!--可建立表單，action='傳送網址'-->
+        <button type="submit">Submit</button>
+        <!--可以設置按鈕，並submit傳送資料到form表單action連結的網址-->
+    
+        <label for="abc">
+            abc<input type="radio" id="abc" name="abcABC">
+        </label>
+    
+        <label for="ABC">
+            ABC<input type="radio" id="ABC" name="abcABC">
+        </label>
+
+        <!--講解囉!!!!
+        (1)label標籤可各自加入input，但為確保label標籤與input認識彼此，需要設定id綁在一起，也就是label for='XXX'，input id='XXX'
+        (2)type='radio'表示出來型態為按鈕
+        (3)設置name屬性能將有設置的label皆視為一體。       
+        -->
+
+        <label for='loving'>
+            <input id='loving' type='checkbox' name='personality' value="loving">Loving
+        </label>
+
+        <label for='happy'>
+            <input id='happy' type='checkbox' name='personality' value="happy">Happy
+        </label>
+
+        <label for='sad'>
+            <input id='sad' type='checkbox'name='personality' value="sad">Sad
+        </label>
+
+        <!--
+        簡單說，就是checkbox是多選～～～，name一樣是將三個label視為同一體，算是同一大題的意思!!
+        另外加入value是確保資料送出後，伺服器能知道使用者選了什麼答案，若沒加value，則預設值是value='on'，終端並不知道on代表什麼。
+        所以value要與該id綁在一起喔～
+        -->
+    
+        <input type="radio" checked>
+        <!--這裡的checked表示會將我們的按鈕預選，多選時如type='checkbox'也是這樣做喔-->
+
+        <div>
+            <p>什麼都可以用div元素</p>
+            <p>跟p元素一樣泛用性高</p> 
+        </div>
+
+
+
+
+
+        
+    </form>
+
+
+
+
+
+</body>
+</html>
